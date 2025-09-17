@@ -1,0 +1,56 @@
+@keyframes pulse-bg {
+  0% { background-position: -200px 0; }
+  100% { background-position: 200px 0; }
+}
+
+.skeletonCard {
+  /* Mesma estrutura do ProductCard para evitar layout shift */
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+}
+
+.skeletonImage {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  
+  /* Animação de pulso */
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200px 100%;
+  animation: pulse-bg 1.2s ease-in-out infinite;
+}
+
+.skeletonDetails {
+  padding: 1rem;
+}
+
+.skeletonLine {
+  height: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+
+  /* Animação de pulso */
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200px 100%;
+  animation: pulse-bg 1.2s ease-in-out infinite;
+}
+
+.skeletonTitle {
+  height: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.skeletonPrice {
+  width: 60%;
+  height: 1.5rem;
+}
+
+/* Estilos de Dark Mode */
+html.dark .skeletonImage,
+html.dark .skeletonLine {
+  background: linear-gradient(90deg, #2a2a2a 25%, #3a3a3a 50%, #2a2a2a 75%);
+  background-size: 200px 100%;
+}

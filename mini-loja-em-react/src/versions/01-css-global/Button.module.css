@@ -1,0 +1,59 @@
+.button {
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  text-align: center;
+  
+  /* Focus visível para acessibilidade */
+  &:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 4px;
+  }
+}
+
+/* Variantes do botão */
+.solid {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+.solid:hover {
+  background-color: var(--primary-color-hover);
+  box-shadow: var(--card-shadow);
+}
+.solid:disabled {
+  background-color: var(--disabled-bg);
+  cursor: not-allowed;
+}
+
+.outline {
+  background-color: transparent;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.outline:hover {
+  background-color: var(--primary-color-light);
+  box-shadow: var(--card-shadow);
+}
+.outline:disabled {
+  color: var(--disabled-text);
+  border-color: var(--disabled-border);
+  cursor: not-allowed;
+}
+
+.ghost {
+  background-color: transparent;
+  color: var(--primary-color);
+  border-color: transparent;
+}
+.ghost:hover {
+  background-color: var(--primary-color-light);
+}
+.ghost:disabled {
+  color: var(--disabled-text);
+  cursor: not-allowed;
+}

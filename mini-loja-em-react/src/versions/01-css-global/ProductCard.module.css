@@ -1,0 +1,101 @@
+.productCard {
+  /* Estilos básicos do card */
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+  cursor: pointer;
+}
+
+.productCard:hover,
+.productCard:focus-visible {
+  transform: translateY(-5px);
+  box-shadow: var(--card-hover-shadow);
+}
+
+.productCard:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 4px;
+}
+
+.productImageContainer {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  background-color: var(--image-placeholder-bg);
+  overflow: hidden;
+  display: flex; /* Centraliza a imagem */
+  justify-content: center;
+  align-items: center;
+}
+
+.productImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.productDetails {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.productTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  height: 3rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  margin-bottom: 0.5rem;
+}
+
+.productPrice {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--price-color);
+  margin-top: auto;
+}
+
+.productRating {
+  color: var(--star-color);
+  margin-top: 0.5rem;
+}
+
+.productTag {
+  align-self: flex-start;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  background-color: var(--tag-bg);
+  margin-bottom: 0.5rem;
+}
+
+.productActions {
+  padding: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+/* Estilos do MODO ESCURO */
+:global(.dark) .productCard {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+
+:global(.dark) .productTitle,
+:global(.dark) .productPrice,
+:global(.dark) .productRating {
+  color: var(--text-color); /* Ou outra cor clara do seu token */
+}
+
+:global(.dark) .productImageContainer {
+  background-color: var(--image-placeholder-bg);
+}
