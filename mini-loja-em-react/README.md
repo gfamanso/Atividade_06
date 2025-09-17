@@ -15,15 +15,6 @@ A aplicação renderiza uma tela de e-commerce com as seguintes funcionalidades:
 * **Acessibilidade:** Navegação por teclado (`Tab`) e contraste de cores.
 * **Lazy Loading:** As imagens dos produtos são carregadas de forma assíncrona para otimizar o desempenho.
 
-<br>
-<div align="center">
-  <img src="./assets/versao-css-global.png" alt="Versão CSS Global" width="400">
-  <img src="./assets/versao-css-modules.png" alt="Versão CSS Modules" width="400">
-  <img src="./assets/versao-tailwind.png" alt="Versão Tailwind CSS" width="400">
-  <img src="./assets/versao-styled-components.png" alt="Versão Styled-Components" width="400">
-</div>
-<br>
-
 ---
 
 ## Tecnologias Utilizadas
