@@ -17,10 +17,10 @@ A aplicação renderiza uma tela de e-commerce com as seguintes funcionalidades:
 
 <br>
 <div align="center">
-  <img src="[LINK_PARA_IMAGEM_DA_VERSAO_1]" alt="Versão CSS Global" width="400">
-  <img src="[LINK_PARA_IMAGEM_DA_VERSAO_2]" alt="Versão CSS Modules" width="400">
-  <img src="[LINK_PARA_IMAGEM_DA_VERSAO_3]" alt="Versão Tailwind CSS" width="400">
-  <img src="[LINK_PARA_IMAGEM_DA_VERSAO_4]" alt="Versão Styled-Components" width="400">
+  <img src="./assets/versao-css-global.png" alt="Versão CSS Global" width="400">
+  <img src="./assets/versao-css-modules.png" alt="Versão CSS Modules" width="400">
+  <img src="./assets/versao-tailwind.png" alt="Versão Tailwind CSS" width="400">
+  <img src="./assets/versao-styled-components.png" alt="Versão Styled-Components" width="400">
 </div>
 <br>
 
